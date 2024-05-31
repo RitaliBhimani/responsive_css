@@ -1,0 +1,527 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+
+.navbar img {
+    width: 70px;
+    float: left;
+}
+
+.navbar h1 {
+    float: left;
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    float: right;
+}
+
+ul li {
+    float: left;
+    margin: 0px 20px;
+}
+
+ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: black;
+}
+
+.main {
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+    height: 120vh;
+}
+
+.main .content {
+    width: 450px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.content h1 {
+    font-size: 65px;
+}
+
+.content h1 span {
+    color: green;
+}
+
+.content h2 {
+    margin: 10px 0px;
+    color: grey;
+}
+
+.content button {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+}
+
+#green {
+    background-color: green;
+    margin-right: 25px;
+}
+
+#dark {
+    background-color: black;
+}
+
+.rate {
+    display: flex;
+    margin: 15px 0px;
+}
+
+.rate div {
+    width: calc(100%/3);
+}
+
+.rate h1 {
+    font-size: 40px;
+}
+
+.rate p {
+    color: rgb(49, 48, 48);
+}
+
+.info {
+    display: flex;
+    position: absolute;
+    top: 81%;
+    width: 950px;
+    margin-left: 12%;
+}
+
+.info img {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    margin-right: 10px;
+}
+
+.info #loop {
+    display: flex;
+    background-color: rgb(25, 48, 196);
+    color: white;
+    height: 130px;
+    padding: 0px 10px;
+}
+
+.info #loop div {
+    align-content: center;
+}
+
+.info #leaves {
+    display: flex;
+    background-color: rgb(18, 69, 18);
+    color: white;
+    padding: 0px 10px;
+}
+
+.info #leaves div {
+    align-content: center;
+}
+
+.info #truck {
+    display: flex;
+    background-color: orangered;
+    color: white;
+    padding: 0px 10px;
+}
+
+.info #truck div {
+    align-content: center;
+}
+
+.fruits {
+    padding: 20px;
+    /* width: 100%; */
+}
+
+.fruits .category {
+    display: flex;
+    margin: 40px 0px 20px 0px;
+    justify-content: space-between;
+}
+
+.fruits .category h1 {
+    font-size: 38px;
+    margin: 10px 0px;
+}
+
+.fruits .category button {
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    height: 45px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.fruits .img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fruits .img div {
+    width: calc(100%/5);
+}
+
+.img img {
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+.img p {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.fruits .img1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fruits .img1 div {
+    width: calc(100%/4);
+    margin-bottom: 40px;
+}
+
+.img1 img {
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+.img1 p {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px 0px;
+    font-weight: bold;
+}
+
+.img1 #rate {
+    width: 100px;
+    height: 50px;
+}
+
+.apple {
+    display: flex;
+    position: relative;
+}
+
+.apple>img {
+    width: 700px;
+    height: 500px;
+    margin-right: 30px;
+}
+
+.apple div img {
+    width: 440px;
+    height: 233px;
+}
+
+/* media queary */
+@media screen and (min-width : 993px) and (max-width : 1230px) {
+    .main img {
+        width: 120%;
+        height: 110vh;
+    }
+
+    .main .content {
+        width: 400px;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+    }
+
+    .content h1 {
+        font-size: 55px;
+    }
+
+    .content h2 {
+        margin: 8px 0px;
+    }
+
+    .content button {
+        font-size: 16px;
+    }
+
+    .rate {
+        display: flex;
+        margin: 15px 0px;
+
+    }
+
+    .rate h1 {
+        font-size: 35px;
+    }
+
+    .info {
+        display: flex;
+        position: absolute;
+        top: 80%;
+        width: 950px;
+        margin-left: 13%;
+    }
+
+    .info img {
+        width: 50px;
+        height: 50px;
+        align-self: center;
+        margin-right: 10px;
+    }
+
+    .fruits {
+        padding: 20px;
+        width: 120%;
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width : 992px) {
+    .main img {
+        width: 153%;
+        height: 110vh;
+    }
+
+    .main .content {
+        width: 380px;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+    }
+
+    .content h1 {
+        font-size: 52px;
+    }
+
+    .content h2 {
+        margin: 8px 0px;
+    }
+
+    .content button {
+        font-size: 15px;
+    }
+
+    .rate {
+        display: flex;
+        margin: 18px 0px;
+    }
+
+    .rate h1 {
+        font-size: 32px;
+    }
+
+    .info {
+        display: flex;
+        position: absolute;
+        top: 80%;
+        width: 950px;
+        margin-left: 12%;
+    }
+
+    .info img {
+        width: 40px;
+        height: 40px;
+        align-self: center;
+        margin-right: 10px;
+    }
+
+    .fruits {
+        padding: 20px;
+        width: 153%;
+    }
+
+    .apple>img {
+        width: 640px;
+        height: 500px;
+        margin-right: 30px;
+    }
+
+    .apple div img {
+        width: 460px;
+        height: 233px;
+    }
+}
+
+@media screen and (min-width : 425px) and (max-width : 767px) {
+    .main img {
+        width: 270%;
+        height: 110vh;
+    }
+
+    .main .content {
+        width: 350px;
+        position: absolute;
+        top: 20%;
+        left: 8%;
+    }
+
+    .content h1 {
+        font-size: 48px;
+    }
+
+    .content h2 {
+        margin: 8px 0px;
+        font-size: 22px;
+    }
+
+    .content button {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .rate {
+        display: flex;
+        margin: 25px 0px;
+    }
+
+    .rate h1 {
+        font-size: 30px;
+    }
+
+    .info {
+        display: flex;
+        position: absolute;
+        top: 80%;
+        width: 950px;
+        margin-left: 22%;
+    }
+
+    .info img {
+        width: 35px;
+        height: 35px;
+        align-self: center;
+        margin-right: 10px;
+    }
+
+    .info h1 {
+        font-size: 26px;
+    }
+
+    .fruits {
+        padding: 20px;
+        width: 270%;
+    }
+
+    .apple>img {
+        width: 640px;
+        height: 500px;
+        margin-right: 30px;
+    }
+
+    .apple div img {
+        width: 430px;
+        height: 233px;
+    }
+}
+
+@media screen and (min-width : 320px) and (max-width : 424px) {
+    .main img {
+        width: 400%;
+        height: 110vh;
+    }
+
+    .main .content {
+        width: 300px;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+
+    .content h1 {
+        font-size: 45px;
+    }
+
+    .content h2 {
+        margin: 6px 0px;
+        font-size: 18px;
+    }
+
+    .content button {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .rate {
+        display: flex;
+        margin: 25px 0px;
+    }
+
+    .rate h1 {
+        font-size: 23px;
+    }
+
+    .rate p {
+        font-size: 16px;
+    }
+
+    .info {
+        display: flex;
+        position: absolute;
+        top: 80%;
+        width: 950px;
+        margin-left: 50%;
+    }
+
+    .info img {
+        width: 35px;
+        height: 35px;
+        align-self: center;
+        margin-right: 10px;
+    }
+
+    .info h1 {
+        font-size: 23px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+
+    .fruits {
+        padding: 20px;
+        width: 400%;
+    }
+
+    .apple>img {
+        width: 750px;
+        height: 500px;
+        margin-right: 30px;
+    }
+
+    .apple div img {
+        width: 450px;
+        height: 233px;
+    }
+
+}

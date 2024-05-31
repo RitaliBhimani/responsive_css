@@ -1,0 +1,461 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: white;
+    width: 100%;
+    line-height: 60px;
+    height: 60px;
+    padding: 0px 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar p {
+    float: left;
+    font-size: 20px;
+    font-weight: 800;
+    /* border: 2px solid red; */
+}
+
+.header ul {
+    list-style: none;
+    float: right;
+    display: flex;
+}
+
+.header ul li {
+    margin: 0px 25px;
+}
+
+.header li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .2em;
+    padding: 10px;
+}
+
+.header li a:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.contant img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.contant p {
+    position: absolute;
+    top: 65%;
+    left: 38%;
+    color: white;
+    font-size: 30px;
+}
+
+.contant span {
+    font-size: 50px;
+    padding: 2px;
+    margin: 0px 10px 0px 0px;
+    background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(22, 22, 22, 0.7));
+}
+
+.project h2 {
+    padding: 60px 0px 20px 15px;
+}
+
+.project .image-gallery {
+    margin: 10px;
+    background-color: rgba(227, 225, 225, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img {
+    position: relative;
+    width: calc(96%/4);
+    margin: 5px;
+}
+
+.project .img img {
+    width: 100%;
+    height: 280px;
+    border: 1px solid rgb(117, 116, 116);
+}
+
+.project .img p {
+    position: absolute;
+    top: 0%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.about #about {
+    padding: 60px 0px 20px 15px;
+}
+
+.about #para {
+    margin: 30px 20px;
+    text-align: justify;
+}
+
+.gallery {
+    margin: 10px;
+    background-color: rgba(227, 225, 225, 0.5);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.gallery .card {
+    width: calc(93%/4);
+    height: 410px;
+    margin: 10px;
+
+}
+
+.gallery .card img {
+    width: 100%;
+    height: 200px;
+}
+
+.card h2 {
+    margin: 10px 5px;
+    font-size: 25px;
+}
+
+.card span {
+    margin: 10px 5px;
+    color: gray;
+}
+
+.card p {
+    text-align: justify;
+    margin: 10px 5px;
+}
+
+.btn {
+    background-color: rgb(217, 215, 215);
+    border: none;
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: rgb(181, 180, 180);
+    cursor: pointer;
+}
+
+.conta {
+    margin: 30px 10px;
+}
+
+.conta h2 {
+    margin: 20px 0px;
+}
+
+.conta p {
+    font-weight: 600;
+    font-size: 17px;
+    margin: 10px 0px;
+}
+
+.form input {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 5px;
+    font-size: 17px;
+}
+
+.form #btn {
+    padding: 15px;
+    margin: 15px 0px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+/*  -------------------- Media Query ---------------------------- */
+
+@media screen and (min-width:993px)and (max-width:1230px) {
+    .contant span {
+        font-size: 50px;
+        padding: 2px;
+        margin: 0px 10px 0px 0px;
+        background-image: linear-gradient(rgba(27, 27, 27, 0.8), rgba(22, 22, 22, 0.7));
+    }
+
+    .img {
+        position: relative;
+        width: calc(93%/4);
+        margin: 5px;
+    }
+
+    .project .img img {
+        width: 100%;
+        height: 230px;
+        border: 1px solid rgb(117, 116, 116);
+    }
+
+    .gallery .card {
+        width: calc(90%/4);
+        height: 450px;
+    }
+
+    .card h2 {
+        margin: 10px 5px;
+        font-size: 23px;
+    }
+
+    .btn {
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:768px)and (max-width:992px) {
+    .header li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+
+    .about #about {
+        padding: 60px 0px 10px 15px;
+    }
+
+    .img {
+        position: relative;
+        width: calc(90%/2);
+        margin: 5px;
+    }
+
+    .project .img img {
+        width: 100%;
+        height: 230px;
+        border: 1px solid rgb(117, 116, 116);
+    }
+
+    .project .img p {
+        font-size: 16px;
+    }
+
+    .gallery .card {
+        width: calc(88%/4);
+        height: 480px;
+        margin: 10px;
+
+    }
+
+    .gallery .card img {
+        width: 100%;
+        height: 180px;
+    }
+}
+
+@media screen and (min-width: 425px)and (max-width:767px){
+    .navbar p {
+        font-size: 18px;
+    }
+
+    .header ul {
+        height: 60px;
+    }
+
+    .header ul li {
+        margin: 2px;
+    }
+
+    .header li a {
+        font-size: 16px;
+        letter-spacing: .0em;
+        padding: 10px;
+    }
+
+    .contant p {
+        top: 60%;
+        left: 40%;
+        font-size: 25px;
+    }
+
+    .contant span {
+        font-size: 35px;
+    }
+
+    .img {
+        position: relative;
+        width: calc(92%/2);
+        margin: 5px;
+    }
+
+    .project .img img {
+        width: 100%;
+        height: 200px;
+        margin: 10px 0px;
+        border: 1px solid rgb(117, 116, 116);
+    }
+
+    .project .img p {
+        top: 4%;
+        font-size: 16px;
+    }
+
+    .about #about {
+        padding: 50px 0px 2px 15px;
+    }
+
+    .about #para {
+        font-size: 15px;
+    }
+
+    .gallery {
+        margin: 10px;
+        background-color: rgba(227, 225, 225, 0.5);
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .gallery .card {
+        width: calc(100%);
+        height: 410px;
+        margin: 10px;
+
+    }
+
+    .conta p {
+        font-weight: 600;
+        font-size: 13px;
+        margin: 10px 0px;
+    }
+
+    .form input {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    .form #btn {
+        padding: 13px;
+        margin: 15px 0px;
+        background-color: black;
+        border: none;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 320px)and (max-width:424px) {
+    .navbar p {
+        float: left;
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    .header ul {
+        list-style: none;
+        float: right;
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+
+    .header ul li {
+        margin: 2px;
+    }
+
+    .header li a {
+        font-size: 12px;
+        letter-spacing: .0em;
+        padding: 10px;
+    }
+
+    .contant p {
+        top: 55%;
+        left: 28%;
+        font-size: 20px;
+    }
+
+    .contant span {
+        font-size: 30px;
+    }
+
+    .img {
+        position: relative;
+        width: calc(100%);
+        margin: 5px;
+    }
+
+    .project .img img {
+        width: 100%;
+        height: 250px;
+        margin: 10px 0px;
+        border: 1px solid rgb(117, 116, 116);
+    }
+
+    .project .img p {
+        top: 4%;
+        font-size: 16px;
+    }
+
+    .about #about {
+        padding: 50px 0px 2px 15px;
+    }
+
+    .about #para {
+        font-size: 15px;
+    }
+
+    .gallery {
+        margin: 10px;
+        background-color: rgba(227, 225, 225, 0.5);
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .gallery .card {
+        width: calc(100%);
+        height: 410px;
+        margin: 10px;
+
+    }
+
+    .conta p {
+        font-weight: 600;
+        font-size: 13px;
+        margin: 10px 0px;
+    }
+
+    .form input {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    .form #btn {
+        padding: 13px;
+        margin: 15px 0px;
+        background-color: black;
+        border: none;
+        color: white;
+    }
+}
